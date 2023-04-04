@@ -3,6 +3,9 @@
 
 I denna uppgift har det ändrats i fyra filer.
 Den första filen var string.xml 
+Den andra är activity_main.xml
+Den tredje är MainActivity.java
+Den sista var AndroidManifest.xml
 
 ```
         private WebView myWebView;
