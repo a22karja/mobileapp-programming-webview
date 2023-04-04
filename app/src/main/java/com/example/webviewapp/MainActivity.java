@@ -13,24 +13,23 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
-
+    private WebView myWebView;
     public void showExternalWebPage(){
         // TODO: Add your code for showing external web page here
-        WebView myWebView;
-        myWebView=findViewById(R.id.my_webview);
-        myWebView.setWebViewClient(new WebViewClient());
+
+
         myWebView.loadUrl("https://www.google.com/search?q=fedoras&sxsrf=APwXEddRIvIwxRTy5zI4uc9qAklGUEauAw:1680599212021&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjd-ar474_-AhUOS_EDHfr5COMQ_AUoAXoECAEQAw&biw=1920&bih=969&dpr=1");
-        myWebView.getSettings().setJavaScriptEnabled(true);
+
 
     }
 
     public void showInternalWebPage(){
         // TODO: Add your code for showing internal web page here
-        WebView myWebView;
-        myWebView=findViewById(R.id.my_webview);
-        myWebView.setWebViewClient(new WebViewClient());
+
+
+
         myWebView.loadUrl("file:///android_asset/BACON.HTML");
-        myWebView.getSettings().setJavaScriptEnabled(true);
+
     }
 
     @Override
@@ -39,8 +38,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
+        myWebView=findViewById(R.id.my_webview);
+        myWebView.getSettings().setJavaScriptEnabled(true);
+        myWebView.setWebViewClient(new WebViewClient());
         /*
         * Rename your App. Tip: Values->Strings
         * Enable Internet access for your App. Tip: Manifest
