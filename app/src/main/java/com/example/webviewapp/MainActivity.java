@@ -3,26 +3,33 @@ package com.example.webviewapp;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
-
+    WebView myWebView;
     public void showExternalWebPage(){
         // TODO: Add your code for showing external web page here
+        myWebView.loadUrl("https://www.google.com/search?q=fedoras&sxsrf=APwXEddRIvIwxRTy5zI4uc9qAklGUEauAw:1680599212021&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjd-ar474_-AhUOS_EDHfr5COMQ_AUoAXoECAEQAw&biw=1920&bih=969&dpr=1");
+
     }
 
     public void showInternalWebPage(){
         // TODO: Add your code for showing internal web page here
+        myWebView.loadUrl("file:///android_asset/BACON.HTML");
+
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        WebView myWebView;
+        Toast.makeText(this,"BACON",Toast.LENGTH_SHORT).show();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -30,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         myWebView=findViewById(R.id.my_webview);
         myWebView.setWebViewClient(new WebViewClient());
-        myWebView.loadUrl("https://stackoverflow.com/");
+        myWebView.loadUrl("https://www.google.com/search?q=fedoras&sxsrf=APwXEddRIvIwxRTy5zI4uc9qAklGUEauAw:1680599212021&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjd-ar474_-AhUOS_EDHfr5COMQ_AUoAXoECAEQAw&biw=1920&bih=969&dpr=1");
         myWebView.getSettings().setJavaScriptEnabled(true);
 
         /*
@@ -75,11 +82,13 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_external_web) {
+            showExternalWebPage();
             Log.d("==>","Will display external web page");
             return true;
         }
 
         if (id == R.id.action_internal_web) {
+            showInternalWebPage();
             Log.d("==>","Will display internal web page");
             return true;
         }
