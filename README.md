@@ -66,10 +66,10 @@ Den första filen var string.xml
 ```
 
 Internal webpage
-![](internalView.png)
+![](internalView.jpg)
 
 External webpage
-![](externalView.png)
+![](externalView.jpg)
 
 Läs gärna:
 
