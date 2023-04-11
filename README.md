@@ -4,7 +4,9 @@
 I denna uppgift har det ändrats i fyra filer.
 Den första filen var string.xml 
 Den andra är activity_main.xml
+Detta för att sätta in själva webbViewn
 Den tredje är MainActivity.java
+Detta för att sätta in funktioner na av knapparna
 Den sista var AndroidManifest.xml
 
 ```
@@ -74,8 +76,4 @@ Internal webpage
 External webpage
 ![](externalView.jpg)
 
-Läs gärna:
 
-- Boulos, M.N.K., Warren, J., Gong, J. & Yue, P. (2010) Web GIS in practice VIII: HTML5 and the canvas element for interactive online mapping. International journal of health geographics 9, 14. Shin, Y. &
-- Wunsche, B.C. (2013) A smartphone-based golf simulation exercise game for supporting arthritis patients. 2013 28th International Conference of Image and Vision Computing New Zealand (IVCNZ), IEEE, pp. 459–464.
-- Wohlin, C., Runeson, P., Höst, M., Ohlsson, M.C., Regnell, B., Wesslén, A. (2012) Experimentation in Software Engineering, Berlin, Heidelberg: Springer Berlin Heidelberg.
