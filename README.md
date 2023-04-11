@@ -2,12 +2,14 @@
 # Rapport
 
 I denna uppgift har det ändrats i fyra filer.
-Den första filen var string.xml 
-Den andra är activity_main.xml
+Dessa filer är string.xml 
+Denna fil ändrades för att byta namn på programmet.
+Och activity_main.xml
 Detta för att sätta in själva webbViewn
-Den tredje är MainActivity.java
-Detta för att sätta in funktioner na av knapparna
-Den sista var AndroidManifest.xml
+Och MainActivity.java
+Detta för att sätta in funktionerna på knapparna
+Och AndroidManifest.xml
+För att göra så att programet har tillgång till internet
 
 ```
         private WebView myWebView;
